@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.logo-container {
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.logo-container img {
+  max-width: 10rem;
+  width: 100%;
+}
