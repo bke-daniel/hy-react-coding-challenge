@@ -1,5 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
-import { Launch } from "../../types/Launch";
+import { Launch } from "../../../types/Launch";
 
 const QUERY = gql`
   query SpaceXLaunches($limit: Int) {
@@ -22,7 +22,7 @@ type Vars = {
 
 export default function useLaunches() {
   const { data, loading, error } = useQuery<Response, Vars>(QUERY, {
-    variables: { limit: 5 },
+    variables: { limit: 100 },
   });
   return {
     launches: data?.launches,

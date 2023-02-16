@@ -2,9 +2,8 @@ import { Select, MenuItem } from "@mui/material";
 import { useState } from "react";
 import { List, ListItem, ListItemText, Paper, Typography } from "@mui/material";
 
-export default () => {
+export default function Content()  {
   const [limit, setLimit] = useState(5);
-
   return (
     <Paper sx={{ p: 4 }}>
       <label htmlFor="flights-from">Max entries</label>
@@ -25,7 +24,7 @@ export default () => {
                   variant="body2"
                   color="text.primary"
                 >
-                  Mission name
+                  Mission date
                 </Typography>
                 {" – "}
                 Mission details here
