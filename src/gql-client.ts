@@ -1,8 +1,7 @@
 import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
 
 const link = new HttpLink({
-  credentials: "include",
-  uri: "https://api.instantwebtools.net/graphql",
+  uri: "https://spacex-production.up.railway.app",
 });
 
 const gqlClient = new ApolloClient({
